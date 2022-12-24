@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka",Arial,Verdana,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    position: relative;
+    background: #236214;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/shiba_pawasaka.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #236214;
+    z-index: -1;
+}
+
+#header {
+    background-color: white;
+    height: 100px;
+}
+
+#header .aicon {
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 5px #aaa);
+}
+
+#header .logo {
+    position: absolute;
+    top: -30px;
+}
+
+#header .title {
+    position: absolute;
+    right: 30px;
+    filter: drop-shadow(5px 5px 5px #aaa);
+}
+
+#main {
+    width: 1000px;
+    height: 1000px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#main .haikei {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: auto;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 10px;
+    background-color: #206713;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#main .line {
+    background-size: 40px 40px;
+    background-image: repeating-linear-gradient(0deg, #1c9100, #1c9100 2px, #c3e6b4 2px, #c3e6b4);
+}
+
+// スライダー設定
+#main .slider {
+    visibility: hidden;
+}
+
+#main .slider img {
+    padding-bottom: 8px;
+    border-radius: 17px;
+}
+
+#main .slider.slick-initialized {
+    visibility: visible;
+}
+
+#main .slick-prev, .slick-next {
+    z-index: 1;
+}
+
+#main .slick-prev {
+    left: 10px;
+}
+
+#main .slick-next {
+    right: 10px;
+}
+
+#menu {
+    width: 800px;
+    height: 375px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.2em;
+    margin-top: 49px;
+    background-color: rgba(223, 239, 255, 0.6);
+}
+
+#menu h1 {
+    position: relative;
+    background: #dfefff;
+    box-shadow: 0px 0px 0px 5px #dfefff;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #454545;
+    width: 720px;
+}
+/*
+#menu h1:after {
+    position: absolute;
+    content: '';
+    left: -7px;
+    top: -7px;
+    border-width: 0 0 15px 15px;
+    border-style: solid;
+    border-color: #fff rgba(223, 239, 255, 0.9) #a8d4ff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}*/
+
+#menu .menu-nav {
+    font-size: 120%;
+}
+
+#menu .menu-nav a {
+    text-decoration: none;
+}
+
+#menu .menu-nav a:visited {
+    color: darkgreen;
+}
+#menu .menu-nav a:hover {
+    color: orangered;
+    transition: .4s ease-out;
+}
+
+#menu .menu-nav li {
+	position: relative;	
+    display: inline-block;
+	padding: 0 0 0 15px;
+    margin-top: 15px;
+	line-height: 40px;
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+#menu .menu-nav li:not(:first-child) {
+    margin-left: 50px;
+}
+
+#menu .menu-nav li::before {
+    content:'';
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	width: 40px;
+	height: 40px;
+	background: #047dd6;
+	border-radius: 25px;
+    transition: .3s ease-out;
+}
+
+#menu .menu-nav li:hover::before {
+    width: 140px;
+}
+
+#menu .menu-nav li::after {
+    position: absolute;
+    content: '';
+    top: 1.1em;
+    right: -15px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(45deg);
+}
+
+#menu .btn a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 165px;
+    padding: 1em 2em;
+    border-radius: 15px;
+    width: 350px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #cccccc;
+    box-shadow: 0 5px 0 #aaaaaa;
+    transition: 0.3s;
+}
+
+#menu .btn a::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #333333;
+    border-right: 3px solid #333333;
+    transform: rotate(45deg);
+}
+
+#menu .btn a:hover {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #aaa;
+}
+
+#footer {
+    position: relative;
+    padding: 0 0 0 180px;
+    width: 500px;
+    margin: auto auto;
+}
+
+#footer p {
+    font-size: 80%;
+    padding-left: 40px;
+}
