@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka",Arial,Verdana,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    position: relative;
+    background: #236214;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../images/shiba_pawasaka.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #236214;
+    z-index: -1;
+}
+
+#header {
+    background-color: white;
+    height: 100px;
+}
+
+#header .aicon {
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 5px #aaa);
+}
+
+#header .logo {
+    position: absolute;
+    top: -30px;
+}
+
+#header .title {
+    position: absolute;
+    right: 30px;
+    filter: drop-shadow(5px 5px 5px #aaa);
+}
+
+#main {
+    width: 1000px;
+    height: 1000px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    color: black;
+}
+
+#main .haikei {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: auto;
+    width: 1000px;
+    height: 15050px;
+    border-radius: 10px;
+    background-color: #206713;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#main .line {
+    background-size: 40px 40px;
+    background-image: repeating-linear-gradient(0deg, #1c9100, #1c9100 2px, #c3e6b4 2px, #c3e6b4);
+}
+
+.article_haikei {
+    background-image: url(../../images/success/article_haikei.png);
+    width: 800px;
+    height: 15000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    border-radius: 2px;
+    box-shadow: 0 0 2px 0 #0000001f, 0 1px 2px 0 #0000003d;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.article_hero {
+    padding: 24px 24px 16px;
+    background-color: #fff;
+}
+
+.article_top_img {
+    height: 301.35px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-top: 16px;
+    margin-left: 90px;
+}
+
+img {
+    vertical-align: bottom;
+    border: 0;
+}
+
+#article_body {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.saku_table table {
+    table-layout: fixed;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#article_body table {
+    background: #fff;
+    font-size: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#article_body tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#article_body table tr {
+    border: 1px solid #e2e2e2;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+#article_body table tr td {
+    border: 1px solid #e2e2e2;
+    padding: 6px 8px;
+}
+
+.saku_table td {
+    padding: 6px 3px !important;
+    text-align: center;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+#article_body table tr td a {
+    font-weight: 700;
+}
+
+a {
+    color: #0074e0;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#article_body table img {
+    margin-bottom: 0;
+}
+
+#article_body img {
+    margin: 0 auto 8px;
+}
+
+.saku_table img {
+    border-radius: 6px;
+}
+
+a img {
+    border: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+.font {
+    font-weight: bold;
+}
+
+#article_body .article_outline {
+    border: 1px solid #e2e2e2;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 12px 10px 6px;
+}
+
+#article_body .article_outline ul {
+    margin-bottom: 0;
+    margin-top: 4px;
+    padding-left: 4px;
+}
+
+#article_body .article_outline ul li {
+    background-image: none;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    position: relative;
+    list-style: none;
+}
+
+#article_body .article_outline ul li:before {
+    content: "";
+    display: inline-block;
+    background: url(../../images/success/arrow_bottom.png);
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    margin: -3px 6px 0 0;
+    position: absolute;
+    top: 50%;
+}
+
+#article_body .article_outline a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.w_article_img {
+    width: 80% !important;
+    margin: -520px auto 8px;
+    display: block;
+}
+
+.img_wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.w_article_img img {
+    width: 80%;
+    left: 0;
+    top: 100px;
+}
+
+#article_body h2 {
+    font-size: 16px;
+    margin: 16px 0 12px;
+    background: left top no-repeat,right top no-repeat,center center;
+    background-image: initial, initial, initial;
+    background-position-x: left, right, center;
+    background-position-y: top, top, center;
+    background-size: initial, initial, initial;
+    background-repeat-x: no-repeat, no-repeat, initial;
+    background-repeat-y: no-repeat, no-repeat, initial;
+    background-attachment: initial, initial, initial;
+    background-origin: initial, initial, initial;
+    background-clip: initial, initial, initial;
+    background-color: initial;
+    background-image: url(../../images/success/h2-1_saku.png), url(../../images/success/h2-2_saku.png), url(../../images/success/h2-3_saku.png);
+    padding-left: 20px;
+    color: #FFF;
+    background-size: contain,contain,contain;
+    font-weight: 700;
+    padding: 12px 10px;
+}
+
+#article_body h3 {
+    font-size: 16px;
+    margin: 12px 0 8px;
+    background: left top no-repeat,right top no-repeat,center center;
+    background-image: initial, initial, initial;
+    background-position-x: left, right, center;
+    background-position-y: top, top, center;
+    background-size: initial, initial, initial;
+    background-repeat-x: no-repeat, no-repeat, initial;
+    background-repeat-y: no-repeat, no-repeat, initial;
+    background-attachment: initial, initial, initial;
+    background-origin: initial, initial, initial;
+    background-clip: initial, initial, initial;
+    background-color: initial;
+    background-image: url(../../images/success/h3-1_saku.png), url(../../images/success/h3-2_saku.png), url(../../images/success/h3-3_saku.png);
+    padding: 7px 20px;
+    color: inherit;
+    text-shadow: 2px 2px 0px #fff;
+    background-size: contain,contain,contain;
+    border-left: 0;
+    font-weight: 700;
+}
+
+#article_body h4 {
+    font-size: 14px;
+    margin: 8px 0 4px;
+    background-image: url(../../images/success/h4-1_saku.png);
+    padding: 8px 0 2px 30px;
+    background-size: 23px 23px;
+    color: inherit;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#footer .top {
+    position: fixed;
+    z-index: 90;
+    bottom: -100px;
+    right: 3%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#footer .top span {
+    position: relative;
+    height: 54px;
+    width: 54px;
+    display: block;
+    border-radius: 50%;
+    text-shadow: 0 2px 5px rgba(244,74,79,.4), 0 2px 5px rgba(0,0,0,.2);
+    box-shadow: 0 6px 17px -7px rgba(244,74,79,.8);
+    background: #f7685f;
+    background: -moz-linear-gradient(top, #f7685f 7%, #e54749 68%);
+    background: -webkit-linear-gradient(top, #f7685f 7%, #e54749 68%);
+    background: linear-gradient(to bottom, #f7685f 7%, #e54749 68%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7685f', endColorstr='#e54749',GradientType=0 );
+    -webkit-transition: 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+#footer .top span:before,
+#footer .top span:after {
+    content: "";
+    position: absolute;
+    top: 49%;
+    width: 32%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    border-radius: 12px;
+}
+
+#footer .top span:before {
+    left: 24%;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+#footer .top span:after {
+    right: 24%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+#footer .top span:hover {
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%);
+    box-shadow: 0 10px 20px -6px rgba(244, 74, 79, 0.6);
+    opacity: .8;
+}
